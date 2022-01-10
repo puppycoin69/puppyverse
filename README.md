@@ -1,6 +1,6 @@
 # PuppyVerse
 
-Coming soon...
+https://puppyverse.org
 
 ## Help build the PuppyVerse
 
