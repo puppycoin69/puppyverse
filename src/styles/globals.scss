@@ -1,0 +1,60 @@
+
+body {
+    font-family: 'comic sans ms';
+    margin: 0px;
+}
+
+$dark-blue: #282c34;
+$light-blue: #90a1c4;
+
+  
+  #puplogo {
+    height: 40vmin;
+    width: 40vmin;
+    pointer-events: none;
+    background-image: url('../files/puppy-logo-large.png');
+    background-size: cover;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    #puplogo {
+      animation: App-logo-spin infinite 5s linear;
+    }
+  }
+  
+  #maincontainer {
+    background-image: radial-gradient($light-blue 0%, $dark-blue 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    text-align: center;
+  }
+
+  
+#puptitle {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#pupsubtitle {
+    font-size:12pt;
+  }
+  
+  @keyframes App-logo-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform:rotate(-40deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
