@@ -54,6 +54,10 @@ a {
     #puplogo {
       animation: App-logo-spin infinite 5s linear;
     }
+
+    #puplogo2 {
+      animation: App-logo-spin2 infinite 5s linear;
+    }
   }
   
   #maincontainer {
@@ -97,6 +101,21 @@ a {
   }
   
   @keyframes App-logo-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform:rotate(-40deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes App-logo-spin2 {
     0% {
       transform: rotate(0deg);
     }
