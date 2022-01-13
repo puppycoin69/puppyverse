@@ -49,6 +49,14 @@ a {
     background-image: url('../files/puppy-logo-large.png');
     background-size: cover;
   }
+
+  #puplogo2 {
+    height: 40vmin;
+    width: 40vmin;
+    pointer-events: none;
+    background-image: url('../files/puppy-logo-large.png');
+    background-size: cover;
+  }
   
   @media (prefers-reduced-motion: no-preference) {
     #puplogo {
