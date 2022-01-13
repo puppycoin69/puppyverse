@@ -97,6 +97,7 @@ const connectbutton = (props) => {
     }
 
     const pupbalance = await contract.balanceOf(address);
+    console.log(pupbalance.toNumber());
 
     let authresponse = 0;
     if (pupbalance.toNumber() >= 1000000) {

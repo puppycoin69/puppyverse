@@ -12,7 +12,7 @@ const temp = (props) => {
   }, [props.auth]);
 
   return (
-    <div id="maincontainer">
+    <div id="tempmaincontainer">
       <div id="puplogo" />
       <div id="milititle">Welcome to the puppyverse puppillionare. New adventures coming soon.....</div>
       <ConnectButton />

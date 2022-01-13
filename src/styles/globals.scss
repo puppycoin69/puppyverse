@@ -68,6 +68,18 @@ a {
     text-align: center;
   }
 
+  #tempmaincontainer {
+    background-image: radial-gradient($dark-blue 0%, $light-blue 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    text-align: center;
+  }
+
   
 #puptitle {
     margin-top: 20px;
@@ -88,13 +100,10 @@ a {
     0% {
       transform: rotate(0deg);
     }
-    25% {
-      transform: rotate(20deg);
-    }
-    75% {
-      transform:rotate(-40deg);
+    50% {
+      transform: rotate(-180deg);
     }
     100% {
-      transform: rotate(0deg);
+      transform: rotate(-360deg);
     }
   }
