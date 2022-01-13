@@ -5,6 +5,7 @@ const initialState = {
   web3Provider: null,
   address: null,
   chainId: null,
+  auth: null,
 };
 
 const Web3Reducer = (state = initialState, action) => {
@@ -16,6 +17,7 @@ const Web3Reducer = (state = initialState, action) => {
         web3Provider: action.payload.web3Provider,
         address: action.payload.address,
         chainId: action.payload.chainId,
+        auth: action.payload.auth,
       };
     case ActionTypes.SET_ADDRESS:
       return {

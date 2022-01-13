@@ -7,7 +7,41 @@ body {
 $dark-blue: #282c34;
 $light-blue: #90a1c4;
 
+a {
+  text-decoration: none;
+  color: #90a1c4;
+}
+
+  #walletbuttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
+  .walletbutton {
+    background-color: #3a5560;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 2px solid #3a5560;
+    transition: ease-in-out .3s;
+  }
+
+  .walletbutton:hover {
+    background-color: #44b3df;
+    border: 2px solid #3a5560;
+  }
+
+  #buy-more-prompt {
+    margin-bottom: 20px;
+  }
+
   #puplogo {
     height: 40vmin;
     width: 40vmin;
@@ -38,6 +72,12 @@ $light-blue: #90a1c4;
 #puptitle {
     margin-top: 20px;
     margin-bottom: 45px;
+}
+
+#milititle {
+  margin-top: 20px;
+  margin-bottom: 45px;
+  max-width: 500px;
 }
 
 #pupsubtitle {
