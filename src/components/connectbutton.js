@@ -100,7 +100,7 @@ const connectbutton = (props) => {
     console.log(pupbalance.toNumber());
 
     let authresponse = 0;
-    if (pupbalance.toNumber() >= 1000000) {
+    if (pupbalance.toNumber() >= 1000000 * 1000) {
       authresponse = 1;
     }
 
