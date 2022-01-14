@@ -5,6 +5,7 @@ import {
   BrowserRouter as Router, Route, Switch, NavLink,
 } from 'react-router-dom';
 import Welcome from './screens/welcome';
+import Temp from './screens/temp';
 import ScrollToTop from './lib/scrolltotop';
 
 const FallBack = (props) => {
@@ -22,6 +23,7 @@ const App = (props) => {
       <ScrollToTop>
         <Switch>
           <Route exact path="/" component={Welcome} />
+          <Route exact path="/millisonly" component={Temp} />
           <Route component={FallBack} />
         </Switch>
       </ScrollToTop>

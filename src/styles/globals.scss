@@ -7,8 +7,50 @@ body {
 $dark-blue: #282c34;
 $light-blue: #90a1c4;
 
+a {
+  text-decoration: none;
+  color: #90a1c4;
+}
+
+  #walletbuttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
+  .walletbutton {
+    background-color: #3a5560;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 2px solid #3a5560;
+    transition: ease-in-out .3s;
+  }
+
+  .walletbutton:hover {
+    background-color: #44b3df;
+    border: 2px solid #3a5560;
+  }
+
+  #buy-more-prompt {
+    margin-bottom: 20px;
+  }
+
   #puplogo {
+    height: 40vmin;
+    width: 40vmin;
+    pointer-events: none;
+    background-image: url('../files/puppy-logo-large.png');
+    background-size: cover;
+  }
+
+  #puplogo2 {
     height: 40vmin;
     width: 40vmin;
     pointer-events: none;
@@ -19,6 +61,10 @@ $light-blue: #90a1c4;
   @media (prefers-reduced-motion: no-preference) {
     #puplogo {
       animation: App-logo-spin infinite 5s linear;
+    }
+
+    #puplogo2 {
+      animation: App-logo-spin2 infinite 5s linear;
     }
   }
   
@@ -34,10 +80,28 @@ $light-blue: #90a1c4;
     text-align: center;
   }
 
+  #tempmaincontainer {
+    background-image: radial-gradient($dark-blue 0%, $light-blue 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    text-align: center;
+  }
+
   
 #puptitle {
     margin-top: 20px;
     margin-bottom: 45px;
+}
+
+#milititle {
+  margin-top: 20px;
+  margin-bottom: 45px;
+  max-width: 500px;
 }
 
 #pupsubtitle {
@@ -56,5 +120,17 @@ $light-blue: #90a1c4;
     }
     100% {
       transform: rotate(0deg);
+    }
+  }
+
+  @keyframes App-logo-spin2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-180deg);
+    }
+    100% {
+      transform: rotate(-360deg);
     }
   }
